@@ -50,13 +50,19 @@ function receberValores() {
 function calcularIdd(ano, mes, dia) {
     //pegar somente o ano atual
     const dataAtual = new Date();
-    const anoAtual = dataAtual. getFullYear();
+    const anoAtual = dataAtual.getFullYear();
+    const diaAtual = dataAtual.getDay();
+    const mesAtual = dataAtual.getMonth();
     
     let idd = (anoAtual - ano);
 
-    console.log(idd)
+    if(mesAtual < mes && diaAtual <= dia){
+        idd--;
+    }
 
-    return idd
+    console.log(idd);
+
+    return idd;
 }
 
 function classificarIdd(idd) {

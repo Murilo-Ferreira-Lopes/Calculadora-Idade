@@ -20,24 +20,14 @@
                 
                 <div class="campo-form">
                     <label for="nome">Digite o Nome:</label>
-                    <input required type="text" name="campo-nome" id="nome" placeholder="Insira o Nome" >
+                    <input required type="text" name="campo-nome" id="nome" placeholder="Insira o Nome">
                 </div>
                 
-                <div class="campo-form">
-                    <label for="ano">Ano de Nascimento:</label>
-                    <input required type="number" name="campo-ano" id="ano" min="1900" max="2023" placeholder="Insira seu ano de nascimento" >
-                </div>
-
-                <div class="campo-form">
-                    <label for="mes">Mes de Nascimento:</label>
-                    <input required type="number" name="campo-mes" id="mes" step="1" min="1" max="12"
-                        placeholder="Insira o mes do seu nascimento no formato decimal" >
-                </div>
-
-                <div class="campo-form">
-                    <label for="dia">Dia de Nascimento: </label>
-                    <input required type="number" name="dia" id="dia"  min="1" max="31"
-                        placeholder="Insira o dia do seu nascimento no formato decimal" >
+                <div class="campo-datanasc">
+                    <label for="ano">Ano de Nascimento (Dia / Mês / Ano): </label>
+                    <input required type="number" name="dia" id="dia"  min="1" max="31" placeholder="Insira o dia do seu nascimento no formato decimal"><b>/</b>
+                    <input required type="number" name="campo-mes" id="mes" step="1" min="1" max="12" placeholder="Insira o mes do seu nascimento no formato decimal"><b>/</b>
+                    <input required type="number" name="campo-ano" id="ano" min="1900" max="2023" placeholder="Insira seu ano de nascimento">
                 </div>
 
                 <div class="conjunto-botoes">

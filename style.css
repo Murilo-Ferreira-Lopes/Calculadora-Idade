@@ -60,7 +60,7 @@ section {
 }
 
 form {
-    height: 300px;
+    height: 150px;
     margin: 30px 0;
     
     display: flex;
@@ -70,11 +70,21 @@ form {
 
 .campo-form {
     height: 56px;
+    width: 650px;
     color-scheme: dark; 
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 
+}
+
+.campo-datanasc {
+    height: 45px;
+    color-scheme: dark; 
+    display: block;
+    justify-content: space-between;
+   
+    
 }
 
 input {
